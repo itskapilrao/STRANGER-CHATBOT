@@ -16,11 +16,11 @@ API_HASH = os.environ.get("API_HASH", None)
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
 MONGO_URL = os.environ.get("MONGO_URL", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME","") 
-UPDATE_CHNL = os.environ.get("UPDATE_CHNL","SHIVANSH474")
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME","SHIVANSHDEVS")
-SUPPORT_GRP = os.environ.get("SUPPORT_GRP","MASTIWITHFRIENDSXD")
-BOT_NAME = os.environ.get("BOT_NAME","RADHIKA")
-START_IMG = os.environ.get("START_IMG","")
+UPDATE_CHNL = os.environ.get("UPDATE_CHNL","https://t.me/KomalBotsNetwork")
+OWNER_USERNAME = os.environ.get("OWNER_USERNAME","ItsKapilYadav")
+SUPPORT_GRP = os.environ.get("SUPPORT_GRP","https://t.me/KomalMusicRobotSupport")
+BOT_NAME = os.environ.get("BOT_NAME","ShrutiChatBot")
+START_IMG = os.environ.get("START_IMG","https://files.catbox.moe/48hczp.jpg")
 
 STKR = os.environ.get("STKR","")
 
@@ -46,7 +46,7 @@ SOURCE_TEXT = f"""
 ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ**
 """
 SOURCE_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='hurr')], [InlineKeyboardButton(" ꜱᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GRP}"), InlineKeyboardButton(text="ʙᴀᴄᴋ ", callback_data="HELP_BACK")]])
-SOURCE = 'https://github.com/itzshukla/STRANGER-CHATBOT'
+SOURCE = 'https://files.catbox.moe/2d32oj.mp4'
 x=["❤️","🎉","✨","🪸","🎉","🎈","🎯"]
 g=choice(x)
 async def is_admins(chat_id: int):
@@ -461,5 +461,5 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ sʜɪᴠᴀɴsʜ")      
+print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ ItsKapilYadav")      
 Mukesh.run()
