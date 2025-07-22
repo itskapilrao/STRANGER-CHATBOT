@@ -26,7 +26,7 @@ OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "ItsKapilYadav")
 SUPPORT_GRP = os.environ.get("SUPPORT_GRP", "KomalMusicRobotSupport")
 BOT_NAME = os.environ.get("BOT_NAME", "ShrutiChatBot")
 START_IMG = os.environ.get("START_IMG", "https://files.catbox.moe/48hczp.jpg")
-STKR = os.environ.get("STKR", "CAACAgUAAxkBAAIBV2S7R9yN1uPCvYbUjO_xuOgVLxbHAAK7AQACVp29VqIvA0XIWzwSLwQ")
+STKR = os.environ.get("STKR", "CAACAgIAAxkBAAIBg2S8dd6ICi9_yBrR7Ra6d_XH3mkdAAKnAQACVp29VjeHmTPJ1ZcRLwQ")
 
 StartTime = time.time()
 Mukesh = Client(
