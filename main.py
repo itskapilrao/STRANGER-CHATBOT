@@ -11,19 +11,22 @@ import asyncio
 import time
 from datetime import datetime
 from pyrogram import enums
-API_ID = os.environ.get("API_ID", None) 
+
+from dotenv import load_dotenv
+load_dotenv()
+
+API_ID = int(os.environ.get("API_ID", None)) 
 API_HASH = os.environ.get("API_HASH", None) 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
 MONGO_URL = os.environ.get("MONGO_URL", None)
-BOT_USERNAME = os.environ.get("BOT_USERNAME","") 
-UPDATE_CHNL = os.environ.get("UPDATE_CHNL","https://t.me/KomalBotsNetwork")
-OWNER_USERNAME = os.environ.get("OWNER_USERNAME","ItsKapilYadav")
-SUPPORT_GRP = os.environ.get("SUPPORT_GRP","https://t.me/KomalMusicRobotSupport")
-BOT_NAME = os.environ.get("BOT_NAME","ShrutiChatBot")
-START_IMG = os.environ.get("START_IMG","https://files.catbox.moe/48hczp.jpg")
 
-STKR = os.environ.get("STKR","")
-
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "") 
+UPDATE_CHNL = os.environ.get("UPDATE_CHNL", "https://t.me/KomalBotsNetwork")
+OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "ItsKapilYadav")
+SUPPORT_GRP = os.environ.get("SUPPORT_GRP", "https://t.me/KomalMusicRobotSupport")
+BOT_NAME = os.environ.get("BOT_NAME", "ShrutiChatBot")
+START_IMG = os.environ.get("START_IMG", "https://files.catbox.moe/48hczp.jpg")
+STKR = os.environ.get("STKR", "")
 
 StartTime = time.time()
 Mukesh = Client(
