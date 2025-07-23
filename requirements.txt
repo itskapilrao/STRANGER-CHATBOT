@@ -2,5 +2,7 @@ pyrogram
 pymongo
 requests
 dnspython
-tgcrypto==1.2.2
+tgcrypto
 asyncio
+python-dotenv
+openai
