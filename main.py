@@ -189,7 +189,7 @@ async def ping(client, message: Message):
         ms = (end-start).microseconds / 1000
         await message.reply_photo(
                              photo=START_IMG,
-                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [Kapil Yadav](https://t.me/ItsKapilYadav)||**",
+                             caption=f"ʜᴇʏ ʙᴀʙʏ!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪꜱ ᴀʟɪᴠᴇ 🥀 ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ꜰɪɴᴇ ᴡɪᴛʜ ᴘᴏɴɢ ᴏꜰ \n➥ `{ms}` ms\n\n**ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ʙʏ || [ᴋᴀᴘɪʟ ʏᴀᴅᴀᴠ](https://t.me/ItsKapilYadav)||**",
                              reply_markup=InlineKeyboardMarkup(PNG_BTN),
        )
 
@@ -464,5 +464,5 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ ItsKapilYadav")      
+print(f"{BOT_NAME} ɪs ᴀʟɪᴠᴇ! ʙᴏᴛ ʙʏ ɪᴛsᴋᴀᴘɪʟʏᴀᴅᴀᴠ")      
 Mukesh.run()
