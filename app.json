@@ -1,55 +1,72 @@
 {
-    "name":" 𝐒𝐓𝐑𝐀𝐍𝐆𝐄𝐑 𝐂𝐇𝐀𝐓𝐁𝐎𝐓",    
-    "env": {
-        "BOT_TOKEN": {
-            "description": "telegram bot token here",
-            "required": true
-        },        
-        "MONGO_URL": {
-            "description": "mongo db url here",
-            "required": true
-        },
-        "BOT_USERNAME": {
-            "description": "telegram bot username here without @",
-            "required": false
-        },
-        "OWNER_USERNAME": {
-            "description": "Owner Username without @",
-            "required": false
-        },
-        "BOT_NAME": {
-            "description": "Simple Bot-name. Do not use Modified Text..",
-            "required": false
-        },
-        "UPDATE_CHNL": {
-            "description": "Your Updates Channel without @",
-            "required": false
-        },
-        "SUPPORT_GRP": {
-            "description": "Your Support Group without @",
-            "required": false
-        },
-        "STKR": {
-            "description": "Sticker for start ",
-            "required": true
-        },
-        "START_IMG": {
-            "description": "Start Image For Bot.",
-            "required": false
-        },
-        
-        "API_ID": {
-            "description": "telegram api id here",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "telegram api hash here",
-            "required": true
-        }
+  "name": "STRANGER CHATBOT",
+  "description": "A Telegram AI-based Chatbot using Pyrogram and offline AI (Llama/Ollama).",
+  "logo": "https://files.catbox.moe/48hczp.jpg",
+  "keywords": [
+    "python",
+    "telegram",
+    "chatbot",
+    "pyrogram",
+    "AI",
+    "llama",
+    "ollama"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
     },
-    "addons": [
-        {
-            "plan": "heroku-postgresql"
-        }
-    ]
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "A Bot's token from Botfather",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "Your bot's username (without @)",
+      "required": false
+    },
+    "OWNER_USERNAME": {
+      "description": "Owner's username (without @)",
+      "required": false
+    },
+    "BOT_NAME": {
+      "description": "Your bot's public name",
+      "required": false,
+      "value": "STRANGER CHATBOT"
+    },
+    "UPDATE_CHNL": {
+      "description": "Your update channel username (without @), optional",
+      "required": false
+    },
+    "SUPPORT_GRP": {
+      "description": "Your support group username (without @), optional",
+      "required": false
+    },
+    "STKR": {
+      "description": "Sticker file_id for start (required if used)",
+      "required": false
+    },
+    "START_IMG": {
+      "description": "URL for the image used with /start, optional",
+      "required": false,
+      "value": "https://files.catbox.moe/48hczp.jpg"
+    },
+    "LLAMA_API": {
+      "description": "Llama/Ollama API URL (e.g. http://localhost:11434 or your AI server endpoint)",
+      "required": false,
+      "value": ""
+    },
+    "MONGO_URL": {
+      "description": "MongoDB URL if you plan to keep learning features, else leave empty",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
